@@ -1,0 +1,131 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;  color: #1f1f1f;
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* background video */
+
+.main-screen {
+  position: relative;
+  padding-bottom: 12vh;
+  overflow: hidden;
+}
+
+.splash-video {
+  transform: translate(-1300px);
+}
+
+.splash-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.splash-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #4abdac;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+
+/* navbar */
+
+.splash-content {
+  width: 85%;
+  margin: auto;
+}
+
+.topnav {
+  padding: 40px 0;
+  display: flex;
+  justify-content:space-between;
+}
+
+.nav-logo img {
+  filter: invert(100%) brightness(1.5);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  margin: 10px;
+}
+
+.nav-links a {
+  padding: 10px;
+}
+
+.nav-contact-info {
+  display: flex;
+}
+
+.nav-contact-info > * {
+  padding: 10px;
+}
+
+
+/* splash section */
+
+.splash-text {
+  margin: 8vh 0;
+  width: 50%;
+}
+
+.splash-title {
+  font-size: 70px;
+}
+
+.splash-checklist {
+  margin-top: 50px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.check-item i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.check-item p {
+  font-size: 20px;
+}
+
+.splash-button {
+  margin-top: 40px;
+  background-color: transparent;
+  padding: 20px 50px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.splash-button:hover {
+  background-color: white;
+  color: #4abdac;
+  transform: translate(0,-10px);
+}
