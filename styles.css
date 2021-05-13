@@ -9,6 +9,21 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  color: #fc4a1a;
+  font-size: 40px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #1f1f1f
+}
+
 button {
   cursor: pointer;
 }
@@ -17,7 +32,7 @@ button {
 
 .main-screen {
   position: relative;
-  padding-bottom: 12vh;
+  padding-bottom: 18vh;
   overflow: hidden;
 }
 
@@ -43,13 +58,13 @@ button {
   opacity: 0.7;
 }
 
-
-/* navbar */
-
-.splash-content {
+.site-content {
   width: 85%;
   margin: auto;
 }
+
+
+/* navbar */
 
 .topnav {
   padding: 40px 0;
@@ -86,8 +101,8 @@ button {
 /* splash section */
 
 .splash-text {
-  margin: 8vh 0;
-  width: 50%;
+  margin: 5vh 0;
+  width: 60%;
 }
 
 .splash-title {
@@ -95,14 +110,13 @@ button {
 }
 
 .splash-checklist {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .check-item {
   display: flex;
   align-items: center;
-    margin-bottom: 10px;
-
+  margin-bottom: 10px;
 }
 
 .check-item i {
@@ -114,18 +128,182 @@ button {
   font-size: 20px;
 }
 
-.splash-button {
-  margin-top: 40px;
-  background-color: transparent;
+button {
   padding: 20px 50px;
   font-size: 20px;
-  border: 2px solid white;
   border-radius: 10px;
   transition: 0.3s;
+  background-color: transparent;
+  border: 2px solid #fc4a1a;
+  display: flex;
+  align-items: center;
+}
+
+button > * {
+  color: #fc4a1a;
+}
+
+button:hover {
+  transform: translate(0,-10px);
+  background-color: #fc4a1a;
+}
+
+button:hover * {
+  color: white;
+}
+
+.splash-button {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.splash-button a {
+  color: white;
 }
 
 .splash-button:hover {
   background-color: white;
   color: #4abdac;
-  transform: translate(0,-10px);
+}
+
+.splash-button:hover > a {
+  color: #4abdac;
+}
+
+/* second screen */
+
+.about-screen {
+  position: relative;
+  overflow: hidden;
+  padding-top: 15vh;
+  padding-bottom: 21vh;
+}
+
+.about-background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  opacity: 0.2;
+}
+
+.cols-2 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-section {
+  width: 60%;
+  margin-right: 60px;
+  word-spacing: 6px;
+  letter-spacing: 0.5px;
+}
+
+.about-title {
+  margin-bottom: 50px;
+}
+
+.cert-img {
+  width: 220px;
+  margin-bottom: 50px;
+  filter: invert(60%);
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.animate {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(0, 20px);
+      }
+    100% {
+      opacity: 1;
+      }
+}
+
+.cert-img:hover {
+  transform: translate(0, -10px);
+}
+
+.enquire-button {
+  padding: 20px 40px;
+  margin-top: 65px;
+}
+
+.enquire-button p {
+  margin-right: 20px;
+}
+
+
+
+
+/* Accountant card section */
+
+.accountant-cards {
+}
+
+.accountant-card {
+  float: left;
+  height: 500px;
+  width: 25%;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0.5;
+  z-index: -5;
+}
+
+.card-background-img {
+  position: absolute;
+  top: 0;
+  z-index: -6;
+  width: 100%;
+  height: 100%;
+  filter: brightness(80%)
+}
+
+.accountant-card:hover {
+  transform: scale(1.1);
+}
+
+.card-text {
+  margin: 90px 50px;
+}
+
+.card-text i {
+  margin-bottom: 40px;
+  font-size: 60px;
+}
+
+.card-title {
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.card-background.teal {
+  background-color: #4abdac;
+}
+
+.card-background.orange {
+  background-color: #fc4a1a;
+}
+
+.accountant-button {
+  margin-top: 50px;
 }

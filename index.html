@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="styles.css?v=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <!--CODE GOES BELOW HERE-->
@@ -25,67 +24,150 @@
             </video>
             <div class="splash-overlay"></div>
         </div>
-        <div class="splash-content">
+        <div class="site-content">
             <!--NAVBAR-->
-        <div class="topnav">
-            <div class="nav-left">
-                <div class="nav-logo">
-                    <img src='images/assessment-logo.png'>
+            <div class="topnav">
+                <div class="nav-left">
+                    <div class="nav-logo">
+                        <img src='images/assessment-logo.png'>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <a class="active" href='/'>Home</a>
+                        <a href='/'>Services</a>
+                        <a href='/'>Sectors</a>
+                        <a href='/'>Contact</a>
+                    </ul>
+                    <div class="nav-contact-info">
+                        <p>0208 123 4567</p>
+                        <p>info@assessment.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <a class="active" href='/'>Home</a>
-                    <a href='/'>Services</a>
-                    <a href='/'>Sectors</a>
-                    <a href='/'>Contact</a>
-                </ul>
-                <div class="nav-contact-info">
-                    <p>0208 123 4567</p>
-                    <p>info@assessment.com</p>
+
+        <!--MAIN SPLASH SECTION-->
+            <div class="splash">
+                <div class="splash-text">
+                    <h1 class="splash-title">Accounting tailored to your needs.</h1>
+                    <ul class="splash-checklist">
+                        <div class="check-item">
+                            <i class="far fa-check-circle"></i>
+                            <p>Multi Award Winning</p>
+                        </div>
+                        <div class="check-item">
+                            <i class="far fa-check-circle"></i>
+                            <p>Multi Sector Experience</p>
+                        </div>
+                        <div class="check-item">
+                            <i class="far fa-check-circle"></i>
+                            <p>Fully Accredited</p>
+                        </div>
+                        <div class="check-item">
+                            <i class="far fa-check-circle"></i>
+                            <p>Competitive Pricing</p>
+                        </div>
+                        <div class="check-item">
+                            <i class="far fa-check-circle"></i>
+                            <p>Free Advice</p>
+                        </div>
+                        <div class="check-item">
+                            <i class="far fa-check-circle"></i>
+                            <p>Full Service Accounting</p>
+                        </div>
+                    </ul>
+                    <a href="#about">
+                        <button class="splash-button">
+                            Discover More
+                        </button>
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="about-screen" id="about">
+        <img class="about-background-img" src="images/team.jpeg">
+        <div class="site-content">
+            <div class="about-content">
+                <h1 class="title about-title">
+                    About
+                </h1>
+                <div class="cols-2">
+                    <div class="text-section">
+                    
+                        <p class="text about-text">
+                            At Assessment Accounting, we offer a wide range of services including tax assistance, commercial financial advice and help with personal finances. In addition, we are outstanding accountants in Essex who also serve the rest of the UK. In fact, we think that no other accountants across the UK can match us for professionalism, high-quality services and the ability to deliver within tight deadlines. As accountants in London and Essex, UK, we are happy to talk to individuals and businesses anywhere in the country about how we can help.
+                        </p>
+                        <br><br>
+                        <p class="text about-text">
+                            An award-winning accountants firm, Assessment Accounting has experience in all sorts of different sectors. We have the know-how to understand exactly what operators in the automotive industry, the property sector and the ecommerce industry require from a top-quality accountant today, to name just three different sectors. We also work with non profit organisations and sole traders to ensure their finances are in good order.
+                        </p>
+                        <button class="enquire-button">
+                            <p>Enquire</p>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="img-section">
+                        <div class="img-container">
+                            <img class="cert-img animate-in-view" id="img1" src="images/fca-logo.png">
+                        </div>
+                        <div class="img-container">
+                            <img class="cert-img animate-in-view" id="img2" src="images/fta-logo.png">
+                        </div>
+                        <div class="img-container">
+                            <img class="cert-img animate-in-view" id="img3" src="images/ifa-logo.png">
+                        </div>
+                        <div class="img-container">
+                            <img class="cert-img animate-in-view" id="img4" src="images/pfa-logo.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!--MAIN SPLASH SECTION-->
-        <div class="splash">
-            <div class="splash-text">
-                <h1 class="splash-title">Accounting tailored to you.</h1>
-                <ul class="splash-checklist">
-                    <div class="check-item">
-                        <i class="far fa-check-circle"></i>
-                        <p>Multi Award Winning</p>
-                    </div>
-                    <div class="check-item">
-                        <i class="far fa-check-circle"></i>
-                        <p>Multi Sector Experience</p>
-                    </div>
-                    <div class="check-item">
-                        <i class="far fa-check-circle"></i>
-                        <p>Fully Accredited</p>
-                    </div>
-                    <div class="check-item">
-                        <i class="far fa-check-circle"></i>
-                        <p>Competitive Pricing</p>
-                    </div>
-                    <div class="check-item">
-                        <i class="far fa-check-circle"></i>
-                        <p>Free Advice</p>
-                    </div>
-                    <div class="check-item">
-                        <i class="far fa-check-circle"></i>
-                        <p>Full Service Accounting</p>
-                    </div>
-                </ul>
-                <button class="splash-button">Discover More</button>
+    </div>
+    <div class="accountant-cards">
+        <div class="accountant-card">
+            <img class="card-background-img" src="images/sole-trader.jpeg">
+            <div class="card-background teal"></div>
+            <div class="card-text">
+                <i class="fas fa-user-tie"></i>
+                <h1 class="title card-title">
+                    Sole Trader Accounts
+                </h1>
             </div>
-        </div> 
-    </div>
-    </div>
-    <div class="about-screen">
-        <h1>Hello</h1>
-    </div>
- 
+        </div>        
+        <div class="accountant-card">
+            <img class="card-background-img" src="images/company.jpeg">
+            <div class="card-background orange"></div>
+            <div class="card-text">
+                <i class="fas fa-building"></i>
+                <h1 class="title card-title">
+                    Limited Company Accounts
+                </h1>
+            </div>
+        </div>
+        <div class="accountant-card">
+            <img class="card-background-img" src="images/self-employed.jpeg">
+            <div class="card-background teal"></div>
+            <div class="card-text">
+                <i class="fas fa-briefcase"></i>
+                <h1 class="title card-title">
+                    Self Employed Accounts
+                </h1>
+            </div>
+        </div>
+        <div class="accountant-card">
+            <img class="card-background-img" src="images/partners.jpeg">
+            <div class="card-background orange"></div>
+            <div class="card-text">
+                <i class="fas fa-handshake"></i>
+                <h1 class="title card-title">
+                    Partnership Accounts
+                </h1>
+            </div>
+        </div>
+    </div>    
   <script src="scripts.js"></script>
 </body>
 </html>
