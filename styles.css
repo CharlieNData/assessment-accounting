@@ -127,6 +127,8 @@ button {
 }
 
 
+
+
 /* background video */
 
 .main-screen {
@@ -163,6 +165,8 @@ button {
 }
 
 
+
+
 /* navbar */
 
 .topnav {
@@ -181,6 +185,7 @@ button {
 }
 
 .nav-links {
+  display: flex;
   margin: 10px;
 }
 
@@ -195,6 +200,28 @@ button {
 .nav-contact-info > * {
   padding: 10px;
 }
+
+.nav-underline {
+  height: 2px;
+  max-width: 0%;
+  margin: auto;
+  margin-top: 3px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover > .nav-underline {
+  max-width: 80%;
+}
+
+.contact-link:hover > .nav-underline {
+  max-width: 100%;
+}
+
+a.active + .nav-underline {
+  max-width: 80%;
+}
+
 
 
 /* splash section */
@@ -551,7 +578,6 @@ input, textarea, label {
 
 label {
   font-size: 18px;
-  font-weight: 600;
 }
 
 textarea {
