@@ -15,7 +15,12 @@
 </head>
 
 <!--CODE GOES BELOW HERE-->
-<body>
+<body onload="loaderTimeout()">
+    <div class="loader" id="loader">
+        <div class="loader-items">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
     <div class="main-screen">
         <!--SPLASH BACKGROUND VIDEO-->
         <div class="splash-background">
@@ -287,31 +292,44 @@
     <!--CONTACT US SECTION-->
     <div class="contact-us-section">
         <div class="site-content">
-            <div class="contact-form">
-                <form>
-                    <div class="contact-field">
-                        <label for="name">Name</label>
-                        <br>
-                        <input type="text" id="name" name="name">
+            <div class="contact-cols">
+                <div class="contact-form">
+                    <form>
+                        <div class="contact-field">
+                            <label for="name">Your Name</label>
+                            <br>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="contact-field">
+                            <label for="email">Your Email</label>
+                            <br>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="contact-field">
+                            <label for="phone">Your Phone Number</label>
+                            <br>
+                            <input type="text" id="phone" name="phone" pattern="[0-9]">
+                        </div>
+                        <div class="message-field">
+                            <label for="message">Your Message</label>
+                            <br>
+                            <textarea id="message" name="message" style="height:300px"></textarea>
+                        </div>
+                        <button type="button" class="form-submit-btn"><p>Submit</p></button>
+                    </form>
+                </div>
+                <div class="contact-us-text">
+                    <h1 class="title">Any queries? Send them our way.</h1>
+                    <div class="contact-detail">
+                        <p class="detail-text text">Call us directly</p>
+                        <p class="text bold xl">0208 123 4567</p>
                     </div>
-                    <div class="contact-field">
-                        <label for="email">Email</label>
-                        <br>
-                        <input type="text" id="email" name="email">
+                    <div class="contact-detail">
+                        <p class="detail-text text">Email us</p>
+                        <p class="text bold xl">info@example.com</p>
                     </div>
-                    <div class="contact-field">
-                        <label for="phone">Phone Number</label>
-                        <br>
-                        <input type="text" id="phone" name="phone" pattern="[0-9]">
-                    </div>
-                    <div class="message-field">
-                        <label for="message">Your message:</label>
-                        <br>
-                        <textarea id="message" name="message" style="height:200px"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="contact-us-text"></div>
+                </div>
+            </div> 
         </div>
     </div>
 

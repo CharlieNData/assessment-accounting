@@ -46,3 +46,19 @@ for (i=0; i<animatedElements.length; i++) {
     animateOnScrollIn(elementId);
 }
 
+
+// LOADER
+
+var timeout;
+
+function loaderTimeout() {
+  window.scrollTo(0,0)
+  timeout = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  var loader = document.getElementById("loader");
+  loader.style.opacity = "0";
+  loader.style.visibility = "hidden";
+}
+

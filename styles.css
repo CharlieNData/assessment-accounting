@@ -18,15 +18,114 @@ html {
   font-size: 40px;
 }
 
+.white {
+  color: white;
+}
+
 .text {
   font-size: 18px;
   font-weight: 300;
   color: #1f1f1f
 }
 
+.bold {
+  font-weight: 600;
+}
+
+.lg {
+  font-size: 20px;
+}
+
+.xl {
+  font-size: 24px;
+}
+
 button {
   cursor: pointer;
 }
+
+
+
+
+/* loader */
+
+.loader {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #4abdac;
+  transition: 1s;
+}
+
+.loader-items {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-title {
+  font-size: 20px;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
 
 /* background video */
 
@@ -398,7 +497,6 @@ button:hover * {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 .client-img-container {
@@ -423,14 +521,64 @@ button:hover * {
 
 .contact-us-section {
   background-color: white;
+  padding: 14vh 0;
+}
+
+.contact-cols {
+  display: flex;
+}
+
+.contact-form {
+  margin-right: 60px;
+  width: 60%;
+}
+
+.contact-us-text {
+  margin-top: 50px;
+}
+
+.contact-detail {
+  margin-top: 40px;
+}
+
+.detail-text {
+  margin-bottom: 10px;
 }
 
 input, textarea, label {
   color: #1f1f1f;
 }
 
+label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 textarea {
   resize: vertical;
+}
+
+input, textarea {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #f5f5f5;
+  border: none;
+  border-bottom: 3px solid #ccc;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  outline: none !important;
+  border-bottom:3px solid #fc4a1a;
+}
+
+.form-submit-btn {
+  margin-top: 25px;
+  padding: 15px 20px;
+  border-radius: 5px;;
 }
 
 
